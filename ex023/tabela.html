@@ -6,19 +6,21 @@
     <title>primeira tabela</title>
     <style>
         table{
+            height: 400px;
             width: 400px;
             border-collapse: collapse;
         }
 
-        tr#destaque{
-            background-color: rgba(0, 0, 0, 0.521);
-            color: white;
-        }
         
         td{
             border: 1px solid black;
-            padding: 20px;
+            padding: 8px;
             text-align:center;
+            vertical-align: top;
+        }
+
+        .numero{
+            text-align: right;
         }
     </style>
 </head>
@@ -35,13 +37,13 @@
             <td>b1</td>
             <td>b2</td>
             <td>b3</td>
-            <td>b4</td>
+            <td class="numero">b4</td>
         </tr>
         <tr>
             <td>c1</td>
             <td>c2</td>
             <td>c3</td>
-            <td>c4</td>
+            <td class="numero">c4</td>
         </tr>
     </table>
 </body>
