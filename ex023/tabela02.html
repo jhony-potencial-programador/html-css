@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas grandes</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 600px;
+            position: relative;
+        }
+
+        th{
+            border: 1px solid black;
+            padding: 8px;
+
+        }
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        caption{
+            caption-side: top;
+            font-weight: bold;
+            font-size: 1.2em;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot{
+            background-color: #11351eaf;
+            color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #11351eaf;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>uso de tabelas Grandes</h1>
+    <table>
+        <caption>população das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col" >Estado</th>
+                <th scope="col" style="width: 100px">População</th>
+                <th scope="col" style="width: 100px">porcentagem total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Acre</td>
+                <td class="num">13 622 000</td>
+                <td>0.2%</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">46 364 000</td>
+                <td>0.8%</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">86 560 000</td>
+                <td>1.4%</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 869 000</td>
+                <td>0.2%</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">4 996 000</td>
+                <td>0.1%</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3 015 000</td>
+                <td>0.1%</td>
+            </tr>
+                        <tr>
+                <td>Acre</td>
+                <td class="num">13 622 000</td>
+                <td>0.2%</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">46 364 000</td>
+                <td>0.8%</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">86 560 000</td>
+                <td>1.4%</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 869 000</td>
+                <td>0.2%</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">4 996 000</td>
+                <td>0.1%</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3 015 000</td>
+                <td>0.1%</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">13 622 000</td>
+                <td>0.2%</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">46 364 000</td>
+                <td>0.8%</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">86 560 000</td>
+                <td>1.4%</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 869 000</td>
+                <td>0.2%</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">4 996 000</td>
+                <td>0.1%</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3 015 000</td>
+                <td>0.1%</td>
+            </tr>
+                        <tr>
+                <td>Acre</td>
+                <td class="num">13 622 000</td>
+                <td>0.2%</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">46 364 000</td>
+                <td>0.8%</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">86 560 000</td>
+                <td>1.4%</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 869 000</td>
+                <td>0.2%</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">4 996 000</td>
+                <td>0.1%</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3 015 000</td>
+                <td>0.1%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total</th>
+                <td><strong>x</strong></td>
+                <td>y%</td>
+            </tr>
+            
+        </tfoot>
+    </table>
+</body>
+</html>

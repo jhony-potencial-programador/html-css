@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo de tabela.html</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 90vw;
+            
+            margin:  auto;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        caption{
+            caption-side: top;
+            font-weight: bold;
+            font-size: 1.2em;
+            padding: 10px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>exemplo de tabela</h1>
+    <table>
+        <caption>filmes favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">grupo</th>
+                <th scope="col">nomes</th>
+                <th scope="colgroup" colspan="3">filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
+                <td>ana</td>
+                <td>alien</td>
+                <td>rambo</td>
+                <td>vingadores</td>
+            </tr>
+            <tr>
+                <td>beatriz</td>
+                <td>avatar</td>
+                <td>terminator</td>
+                <td>matrix</td>
+            </tr>
+            <tr>
+                <td>carla</td>
+                <td>titanic</td>
+                <td>interestelar</td>
+                <td>star wars</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homens</th>
+                <td>daniel</td>
+                <td>avatar</td>
+                <td>rambo</td>
+                <td>vingadores</td>
+            </tr>
+            <tr>
+                <td>daniel</td>
+                <td>avatar</td>
+                <td>rambo</td>
+                <td>vingadores</td>
+            </tr>
+            <tr>
+                <td>daniel</td>
+                <td>avatar</td>
+                <td>rambo</td>
+                <td>vingadores</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="4">total</th>
+                <td>total</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
