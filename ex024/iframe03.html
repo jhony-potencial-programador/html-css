@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uso de iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela{
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+        ul > li{
+            display: inline-block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>faça uma escolha</h1>
+    <p>lore ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <ul>
+        <li><a href="paginas-extras/pagina01.html" target="frame">pagina 1</a></li>
+        <li><a href="paginas-extras/pagina02.html" target="frame">pagina 2</a></li>
+        <li><a href="paginas-extras/pagina03.html" target="frame">pagina 3</a></li>
+    </ul>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus commodi tempore saepe cumque natus vero deleniti? Quibusdam, repellat quisquam! Ipsam ullam delectus provident id dolorem eaque debitis, accusantium autem consectetur!</p>
+    
+    <iframe 
+        id="tela" 
+        name="frame" 
+        srcdoc="
+            <h1>selecione uma das opções acima</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <img src='imagens/docedeitada.png'>
+        ">
+    <p>infelismente seu nav não é compativel</p></iframe>
+</body>
+</html>
