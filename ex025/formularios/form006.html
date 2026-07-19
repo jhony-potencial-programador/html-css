@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>exemplo formulario</h1>
+    <form action="cadastro.php" autocomplete="on" method="get">
+    <p>
+        <label for="icor">cor:</label>
+        <input type="color" name="cor" id="icor" value="#00ff00">
+    </p>
+    <p>
+        <label for="inivel">Nivel:</label>
+        <input type="range" name="nivel" id="inivel" min="50" max="100" value="50">
+    </p>
+        <p>
+        <label for="ifoto">file:</label>
+        <input type="file" name="foto" id="ifoto">
+    </p>
+    <p>
+        <input type="submit" value="enviar">
+        <input type="reset" value="limpar">
+    </p>
+    </form>
+</body>
+</html>
