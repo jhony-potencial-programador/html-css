@@ -1,0 +1,12 @@
+multiplas media features com CSS
+
+media="'media types' and 'media filters'"
+
+tipos de midia:
+* screen: tela geral
+* print: para impressões
+* all: todos os tamanhos de tela
+
+* media filter: caracteristicas de midia
+* media type: tipos de media
+
