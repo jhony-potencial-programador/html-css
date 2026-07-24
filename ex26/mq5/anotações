@@ -1,0 +1,6 @@
+use o google icons (aicouns) para adicionar icones no meio do seu site
+1 escplhe um icone para web
+2 copiar o tipo para html que vai começar com link ex:"<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />" 
+3 cola dentro do head
+4 um pouco abaixo no site do google vai apresentar a forma de usar "using the icons in html"
+5 copia e cola onde deseja colocar no html
