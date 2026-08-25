@@ -1,0 +1,165 @@
+1° 
+grid layout: sistema de criação de layout baseado em grade bidimencional e otmizado para desing de interfaces;
+
+filhos pode se posicionados livrimente na estruturas de formas flexiveis e fixas;
+
+divide partes em linhas e colunas, determinando o inicio e final do posicionamento dos itens nas colunas e linhas;
+
+2° CONTAINER
+-grid container: locar onde o grid layoud trabalha
+-grid item: caixads dentro do grid container
+-grid track: retas horizontaris e verticais
+-row track: linha de coluna
+-colunn track: coluna de linha
+-grid lines: linhas entre os items que são -numeradas conforme a ordem da esquerda pra direita e de cima pra baixo  
+-podemos  chamar a ultima linha de grid line de (-1) e contar da direita pra esquerda subtraindo 1 ex: -1, -2, -3 ... 
+-grid area: area de grid uma area deterninada por inicios e fins, ex(2 ao 5)
+-grid gap: espaço entre os itens 'pode alterar o tamanho do gap sem alterar o tamanho dos itens
+
+3°
+display: grip; determina os itens como itens da grade
+
+grid-tamplate-coluns: auto auto; fica com duas colunas (numero de 'auto' determina a quantia de colunas com mesma largura)
+
+grid-tampladte-rows:100px 100px 100px; deixas 3 linhas com 100pixels
+
+gap: 20px; cria espaçinho entre os itens
+
+
+4°
+align: vertical e justify: horizontal "ainda usado para pai"
+
+*align-items: vertical
+-strech: padrão
+-start: coloca no inicio
+-center: deixa no meio
+-end: coloca na parte de baixo
+
+*justify-items: horizontal
+-strech: padrão
+-start: coloca no inicio
+-center: deixa no meio
+-end: coloca na direita
+
+*align-content: vertical
+-strech: padrão estica
+-start: coloca o conjunto de itens no inicio do container
+-center: coloca o conjunto de itens no inicimeioo do container
+-end: coloca o conjunto de itens no fim do container
+-space-between: tu ta ligado de flexbox ja né safado
+-space-evenly: hehe
+-space-around: laterais iguais acima e abaixo
+
+*justify-content: horizontal 
+-strech: padrão estica
+-start: coloca o conjunto de itens no inicio do container
+-center: coloca o conjunto de itens no inicimeioo do container
+-end: coloca o conjunto de itens no fim do container
+-space-between: tu ta ligado de flexbox ja né safado
+-space-evenly: hehe
+-space-around: laterais iguais acima e abaixo
+
+
+5°
+grid-auto-row: 100px; a cada linha adicionad,são adicionados 100px de altura
+
+grid-auto-column: 100px; a cada coluna adicionad,são adicionados 100px de largura
+
+place-items: strech center; conjunto de align-items e justify-items
+
+place-content: start end; conjunto de align-content e justify-contetn
+
+grid-template: 100px 100px 100px / auto auto auto; conjunto de grid-tamplade-row e grid-templade-columnz
+
+
+6°
+*repeat: diz quantas vezes a função sera usada:
+
+grid-tamplade-columns: "repeat(3, auto) = auto auto auto";
+grid-tamplade-rows: "repeat(3, 100px) = 100px 100px 100px"
+
+pode juntar com:
+grid-tamplade: repeat(3, 100px) / repeat(3, auto);
+
+*unidade fracional= use 1fr em vez de auto
+
+7°
+*grid-auto-flow: 
+se columns ele adiciona mais uma coluna do mesmo tamanho das outras
+se row ele adiciona mais uma linha do tamanho das outras
+
+
+*ITENS:
+
+8° 
+*caixas
+
+.caixa1{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-and: 5;
+}
+.caixa2{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-and: 3;
+}
+.caixa3{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    }
+
+
+9°
+*span
+
+.caixa1{
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    grid-column-start: 1;
+    grid-column-and: span 4;
+}
+.caixa2{
+    grid-row-start: 2;
+    grid-row-end: span 3;
+    grid-column-start: 1;
+    grid-column-and: span 2;
+}
+.caixa3{
+    grid-row-start: 2;
+    grid-row-end: span 3;
+    grid-column-start: 3;
+    grid-column-end:  span 4;
+    }
+
+*gri-row e grid-column
+
+.caixa1{
+    grid-row: 1/2;
+    grid-column-start: 1/5;
+}
+.caixa2{
+    grid-row: 2/4;
+    grid-column: 13;
+}
+.caixa3{
+    grid-row: 2/4;
+    grid-column: 3/5;
+    }
+    
+*grid-area "simplificação maxima":
+row-start/column-start/row-and/column-and
+
+.caixa1{
+    grid-area: 1/1/2/5;
+}
+.caixa2{
+    grid-area: 2/1/4/3;
+}
+.caixa3{
+    grid-area: 2/3/4/5;
+    }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-layout</title>
+    <style>
+        .container{
+            border: 2px dotted blue;
+            display: grid;
+            grid-template: 100px 40% repeat(2, 1fr) / repeat(2, 1fr) 4fr;
+            grid-auto-flow: row;
+            grid-auto-rows: 80px;
+            grid-auto-columns: 120px;
+            gap: 10px;
+
+            place-items: normal;
+            place-content: normal;
+        }
+        .iten{
+            border: 2px solid red;
+
+        }
+    </style>
+        
+</head>
+<body>
+    <main class="container">
+        <div class="iten iten1">1</div>
+        <div class="iten iten2">2</div>
+        <div class="iten iten3">3</div>
+        <div class="iten iten4">4</div>
+        <div class="iten iten5">5</div>
+        <div class="iten iten6">6</div>
+        <div class="iten iten7">7</div>
+        <div class="iten iten8">8</div>
+        <div class="iten iten9">9</div>
+
+    </main>
+</body>
+</html>

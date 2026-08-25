@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body, html{
+    text-align: center;
+}
+
+header{
+    background-color: #ADAEB2;
+    height: 70px;
+    border-bottom: 1px solid #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    width: 60px;
+    height: auto;
+}
+
+header > nav ul{
+    display: inline-block;
+    list-style: none;
+    gap: 20px;
+}
+
+header > nav a{
+    margin-right:10px ;
+    text-decoration: none;
+    font-size: 0.7em;
+}
+
+main{
+    width: 87vw;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+
+main h1{
+    text-align: center;
+    padding: 25px;
+}
+
+main h2{
+    padding: 15px;
+}
+
+main h3{
+    padding: 15px 15px 0px 15px;
+}
+
+main p{
+    padding: 15px;
+}
+
+main img{
+    width: 95%;
+    max-width: 650px ;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+main button{
+    padding: 8px;
+    margin-bottom: 20px;
+    border-color: orange;
+    border-radius: 3px;
+    background-color: rgba(156, 57, 21, 0.767);
+    color: white;
+
+}
+
+main section{
+    margin-bottom: 20px;
+}
+
+#beneficios{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap:wrap ;
+}
+
+main article{
+    width: 300px;
+    height: 250px;
+    margin-top: 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: inline-block;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.404);
+}
+main article p{
+    text-align: center;
+}
+
+main article#c1{
+    background-color: #E8E8E8;
+}
+
+main article#c2{
+    background-color: #F3E6D7;
+}
+
+main article#c3{
+    background-color: #F5C89A;
+}
+
+
+nav{
+    float: right;
+}
+
+footer{
+    background-color: #ADAEB2;
+    padding: 30px;
+}
+
+footer > nav{
+    background-color: #ADAEB2;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    gap: 20px;
+}
+
+footer > nav a{
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+footer > nav a:hover{
+    text-decoration: underline;
+}

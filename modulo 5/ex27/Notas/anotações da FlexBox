@@ -1,0 +1,120 @@
+1°
+o que vamos aprender no módulo 5 :
+
+flexbox
+grid layout
+fazer um projeto final de portifólio mostrando meus projetos
+
+2°
+primeiros passos para flexbox
+qual o formato da agua:
+depende o recipiente de onde ela estiver
+
+quem é o pai:
+flex container onde os iteins(filhos) estão 
+
+display: flex; deixar o container flexivel
+flex: auto; faz o item usar toda largura disponivel
+
+3°
+PAI: flex directions
+1 padrão: row = linha deitada left to right
+2 ro-reverse = right to left
+3 flex-direction: column; = top to bottom
+4 flex-direction: column-reverse; = bottom to top
+
+main-axis: eixo principal 
+*main start(inicio) e main end(fim) para linha(pode ser coluna se o flex-directions for column)
+*cross start(inicio) e cross end(fim) para coluna(pode ser linha se o flex-directions for column)
+
+o main axis varia conforme as 4 flex directions
+flex-direction: aqui você define a direção <3;
+
+4°
+*Flax-wrap = "encapsulamento";
+nowrap = não encapsulamento = não quebra = é p padrão
+wrap = quebra no eixo tranvesal e passa para baixo ou lado
+wrap-reverse = sentido oposto do eixo tranversal = quebra no sentido ontrario, se quebrava pra baixo vai para cima
+
+flex-flow é a mistura de flex-direction e flax-wrap
+
+5°
+*justify-content: "configuração da organização dos itens ";
+flex-start: primeiro item fica no main start
+flex-and: começão no main and e espaço em branco fica no main start
+center: manda os itens pro centro juntos
+space-between: espços iguais e item colam nas bordas
+space-evenly: espaçamentos iguais antes e depois
+space around: espaços lateais iguais, parecer um margin que ocupa certin
+
+*align-items: usado para modificações na vertical
+stretch: é o padrão, ele estica
+flex-start: faz grudar na parte de cima
+flex-and: manda pro final colado
+center: óbvio, o nome se entrega :)
+
+6°
+centralização absoluta
+coloca o justify-content e o align-items em center (simples)
+use no pai "container" obvio
+
+7°
+*align-content: decide o que é feito com o espaço vazio debaixo dos items
+justify-content: alinha os items no eixo vertical
+align-items: alinha dentro do eixo transversal
+align-content: eixo transversal tbm, mas quando estão empacotados
+
+elementos
+stretch: estica os lementos ao expandir, é o valor padrão
+flex-start: gruda os elementos no coss start(se o justify-contente for o padrão vai manda pra cima)
+flex-and: manda os elementos para o final
+center: deixar os items no meio do cross
+space-between:colado no topo e final com espaços iguais nos outros
+space-evenly: deixa todos com distancias iguais
+space-around: deixa todas as laterias com mesma medida com se tivessem margin proporcional
+
+8° 
+*FILHO anatomia dos itens flexbox:
+
+-order: todo elemento tem order padrão 0
+os numeros ficam ordenados de froma crescente
+
+-align-self: funciona no cross-axis
+auto: pega alinhamento do pai
+flex-start: grudado ao começo
+flex-and: grudado ao fim
+center: deixa au meio
+stretch: estica
+
+9°
+*flex-basis: tamanho do item
+auto: é o padrão e proporcional ao tamanho do conteúdo
+posso tambem colocar um tamanho, ex:200px, mas assim não se adapta ao conteudo
+
+10°
+*fle-shrink: define a possibilidade de encolher
+por padrão é 1 e pode encolher
+se colocado 0 não pode encolher
+conforme o numero colocado 2, 3, 4, a proporção aumenta
+um itens com flex-grow 2 diminui o dobro do que diminuiu 1
+
+*fle-grow: define a possibilidade de espandir
+por padrão é 0 e não pode crescer
+se colocado 1 ele pode crescer
+conforme o numero colocado 2, 3, 4, a proporção almenta
+um itens com flex-grow 2 crece o dobro do que creceu 1
+
+se quer os items totalmente flexiveis coloque os dois como 1
+
+11°
+*flex: junção de shrink, grow e basis
+um flex: 2 0 150px; é o mesmo que:
+flex-grow: 2; flex-shrink: 0; flex-basis: 150px;
+ou seja uma forma de simplificar e economizar tempo
+ordem semre: grow+shrink+basis
+
+flex: 0 1 auto; é o padrão e pode ser flex initial
+flex: 0 0 auto; é não ser flexivel e pode ser flex none
+flex: 1 1 auto; é ser totalmente flexivel e pode tambem ser auto
+flex: 3 é o mesmo que flex: 3 1 auto "o grow vem primeiro e o resto é padrão"
+

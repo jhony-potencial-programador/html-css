@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Company</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="stylesheet" href="estilos/styles-responsive.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+        <h1>Bem-vindo à Tech Company</h1>
+        <p>Transformando ideias em soluções tecnológicas</p>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Sobre Nós</h2>
+            <p>A Tech Company é líder em inovação tecnológica, oferecendo soluções personalizadas para empresas de todos os tamanhos.</p>
+            <img src="imagens/imagem-sobre-nos.jpeg" alt="Sobre Nós" class="responsive-img">
+        </section>
+        <section id="services">
+            <h2>Serviços</h2>
+            <div class="services-container">
+                <div class="service">
+                    <h3>Desenvolvimento de Software</h3>
+                    <p>Construímos aplicações sob medida para atender suas necessidades específicas.</p>
+                </div>
+                <div class="service">
+                    <h3>Consultoria em TI</h3>
+                    <p>Fornecemos consultoria especializada para otimizar seus processos de negócios.</p>
+                </div>
+                <div class="service">
+                    <h3>Suporte Técnico</h3>
+                    <p>Oferecemos suporte técnico 24/7 para garantir que sua operação nunca pare.</p>
+                </div>
+            </div>
+            <img src="imagens/imagem-servicos.jpeg" alt="Serviços" class="responsive-img">
+        </section>
+        <section id="contact">
+            <h2>Contato</h2>
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section id="table-section">
+            <h2>Dados da Empresa</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Tipo</th>
+                        <th>Localização</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tech Company</td>
+                        <td>Software</td>
+                        <td>São Paulo</td>
+                    </tr>
+                    <tr>
+                        <td>Inovações Tech</td>
+                        <td>Consultoria</td>
+                        <td>Rio de Janeiro</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="video-section">
+            <h2>Vídeo de Apresentação</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/aNQl0nPK63s?si=zZKLf3S_lTVUr6F7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tech Company. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
